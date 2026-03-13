@@ -36,7 +36,7 @@ wind-monitor-app/
 └── README.md
 ```
 
-### 📂 File Details (Add these to your README)
+### 📂 File Details
 
 * **`backend/main.py`**: Contains the FastAPI implementation, BMRS API integration, and the critical forecast horizon filtering logic (selecting the latest forecast at least $X$ hours before the target time).
 * **`frontend/app/page.tsx`**: The main entry point for the dashboard, managing the synchronization between the calendar widgets, horizon slider, and the chart data.
