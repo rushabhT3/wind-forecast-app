@@ -2,6 +2,8 @@
 
 A full-stack application to monitor and analyse UK national wind power generation vs. BMRS Elexon forecasts (January 2024).
 
+> **App Demo Link:** ✅✅✅❌❌❌
+
 > **AI Disclosure:** This project was built with AI assistance (Claude by Anthropic) for code generation, scaffolding, and documentation.
 
 ---
@@ -33,6 +35,15 @@ wind-monitor-app/
 ├── run.sh              Starts both servers concurrently
 └── README.md
 ```
+
+### 📂 File Details (Add these to your README)
+
+* **`backend/main.py`**: Contains the FastAPI implementation, BMRS API integration, and the critical forecast horizon filtering logic (selecting the latest forecast at least $X$ hours before the target time).
+* **`frontend/app/page.tsx`**: The main entry point for the dashboard, managing the synchronization between the calendar widgets, horizon slider, and the chart data.
+* **`frontend/components/WindChart.tsx`**: Implements the Recharts visualization to compare Actual vs. Forecasted generation lines.
+* **`analysis/notebook1_forecast_error.ipynb`**: Performs the statistical error analysis for January 2024, outputting Mean, Median, and P99 metrics as required.
+* **`analysis/notebook2_reliability.ipynb`**: Evaluates historical actual generation to derive a P10-based reliability recommendation for grid demand planning.
+* **`run.sh`**: A utility script to streamline local development by launching the Python backend and Next.js frontend concurrently.
 
 ---
 
@@ -114,8 +125,8 @@ Open `notebook1_forecast_error.ipynb` or `notebook2_reliability.ipynb`.
 
 ## Deployment
 
-- **Backend:** Deploy the `backend/` folder to Heroku, Railway, or any platform supporting Python/Docker. Set the `PORT` environment variable.
-- **Frontend:** Deploy the `frontend/` folder to Vercel. Set `NEXT_PUBLIC_API_URL` to your backend URL.
+- **Backend:** https://wind-forecast-app-production.up.railway.app
+- **Frontend:** https://wind-forecast-app.vercel.app/
 
 ---
 
