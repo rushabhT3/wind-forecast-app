@@ -1,1 +1,1 @@
-# wind-forecast-app
+# wind-monitor-app
