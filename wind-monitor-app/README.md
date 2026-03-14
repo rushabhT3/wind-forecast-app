@@ -2,9 +2,16 @@
 
 A full-stack application to monitor and analyse UK national wind power generation vs. BMRS Elexon forecasts (January 2024).
 
-> **App Demo Link:** ✅✅✅❌❌❌
+> **App Demo Link:** https://www.youtube.com/live/dl1m3U3qdhg
 
 > **AI Disclosure:** This project was built with AI assistance (Claude by Anthropic) for code generation, scaffolding, and documentation.
+
+---
+
+## Deployment
+
+- **Backend:** https://wind-forecast-app-production.up.railway.app
+- **Frontend:** https://wind-forecast-app.vercel.app/
 
 ---
 
@@ -133,13 +140,6 @@ Open `notebook1_forecast_error.ipynb` or `notebook2_reliability.ipynb`.
 | `horizon_hours`| int     | Forecast horizon 0–48 (default: 4)   |
 
 **Note:** Data is clamped to January 2024.
-
----
-
-## Deployment
-
-- **Backend:** https://wind-forecast-app-production.up.railway.app
-- **Frontend:** https://wind-forecast-app.vercel.app/
 
 ---
 
