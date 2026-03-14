@@ -74,7 +74,12 @@ wind-monitor-app/
 ```bash
 cd backend
 python3 -m venv .venv
-source .venv/bin/activate          # Windows: .venv\Scripts\activate
+
+# Activate environment:
+source .venv/bin/activate          # Linux/macOS
+.venv\Scripts\activate           # Windows (Command Prompt)
+# .venv\Scripts\Activate.ps1       # Windows (PowerShell)
+
 pip install -r requirements.txt
 uvicorn main:app --reload --port 8000
 ```
@@ -101,7 +106,15 @@ Open: http://localhost:3000
 
 ```bash
 cd analysis
+python3 -m venv .analysis_env
+
+# Activate environment:
+source .analysis_env/bin/activate  # Linux/macOS
+.analysis_env\Scripts\activate     # Windows
+
 pip install -r requirements.txt
+
+# Jupyter launch:
 jupyter notebook
 ```
 
